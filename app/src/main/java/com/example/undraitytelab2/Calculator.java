@@ -16,8 +16,8 @@ public class Calculator {
     }
 
     public static int getWordsCount(String userInputText){
-        if (userInputText == null)
+        if (userInputText.toString().trim().isEmpty())
             return 0;
-        return userInputText.trim().split("\\s+").length;
+         else return userInputText.trim().split("\\s+").length;
     }
 }

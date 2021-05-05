@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Spinner ddList;
@@ -37,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
         String charSelectionOption = getResources().getString(R.string.char_selection);
         String numberSelectionOption = getResources().getString(R.string.numbers_selection);
         String wordSelectionOption = getResources().getString(R.string.words_selection);
+
+
+        if(edInput.getText().toString().trim().isEmpty()) {
+            //display Toast message
+            Toast.makeText(this, "Empty", Toast.LENGTH_SHORT).show();
+        }
 
         if(selection.equalsIgnoreCase(charSelectionOption)){
             int count = Calculator.getCharsCount(userInputText);
