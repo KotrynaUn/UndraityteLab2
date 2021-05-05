@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">KotrynaUndraityteLab2</string>
+    <string name="btn_caption">How many?</string>
+    <string-array name="selection_array">
+        <item>Words</item>
+        <item>Numbers</item>
+        <item>Chars</item>
+    </string-array>
+    <string name="char_selection">Chars</string>
+    <string name="numbers_selection">Numbers</string>
+    <string name="words_selection">Words</string>
+</resources>
